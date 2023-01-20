@@ -45,10 +45,10 @@ interface IRepo {
 
   if (!committedTimeResponseMap) return;
 
-  let morning = 0; // 6 - 12
-  let daytime = 0; // 12 - 18
-  let evening = 0; // 18 - 24
-  let night = 0; // 0 - 6
+  let morning = 0; // 6 - 12h
+  let daytime = 0; // 12 - 18h
+  let evening = 0; // 18 - 24h
+  let night = 0; // 0 - 6h
 
   committedTimeResponseMap.forEach(committedTimeResponse => {
     committedTimeResponse?.data?.repository?.ref?.target?.history?.edges.forEach(edge => {
